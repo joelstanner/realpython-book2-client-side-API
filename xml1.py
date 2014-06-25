@@ -1,0 +1,10 @@
+# XML parsing #1
+
+
+from xml.etree import ElementTree as et
+
+# parses the file
+doc = et.parse("cars.xml")
+
+# outputs the first MODEL in the cars file
+print doc.find("CAR[2]/MODEL").text
