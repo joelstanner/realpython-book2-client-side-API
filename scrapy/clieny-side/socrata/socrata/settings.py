@@ -9,9 +9,13 @@
 #
 
 BOT_NAME = 'socrata'
+DOWNLOAD_DELAY = 10
+ITEM_PIPELINES = ['socrata.pipelines.SocrataPipeline']
 
 SPIDER_MODULES = ['socrata.spiders']
 NEWSPIDER_MODULE = 'socrata.spiders'
+
+FEED_EXPORTERS = {'sqlite': 'socrata.exporters.SqliteItemExporter',}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'socrata (+http://www.yourdomain.com)'

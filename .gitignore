@@ -1222,3 +1222,4 @@ env/lib/python2.7/site-packages/setuptools/tests/test_test.py
 env/lib/python2.7/site-packages/setuptools/tests/test_test.pyc
 env/lib/python2.7/site-packages/setuptools/tests/test_upload_docs.py
 env/lib/python2.7/site-packages/setuptools/tests/test_upload_docs.pyc
+*.pyc

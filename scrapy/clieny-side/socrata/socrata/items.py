@@ -12,3 +12,4 @@ class SocrataItem(Item):
     name = Field()
     url = Field()
     views = Field()
+    sqlite_keys = Field()
