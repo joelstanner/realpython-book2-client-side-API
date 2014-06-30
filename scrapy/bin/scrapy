@@ -1,0 +1,4 @@
+#!/Users/Joel/Documents/python_programs/real_python/book2/RealPython_book2/scrapy/bin/python
+
+from scrapy.cmdline import execute
+execute()

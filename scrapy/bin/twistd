@@ -1,0 +1,14 @@
+#!/Users/Joel/Documents/python_programs/real_python/book2/RealPython_book2/scrapy/bin/python
+# Copyright (c) Twisted Matrix Laboratories.
+# See LICENSE for details.
+import os, sys
+
+try:
+    import _preamble
+except ImportError:
+    sys.exc_clear()
+
+sys.path.insert(0, os.path.abspath(os.getcwd()))
+
+from twisted.scripts.twistd import run
+run()
