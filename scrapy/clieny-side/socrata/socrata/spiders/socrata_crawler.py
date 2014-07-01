@@ -13,10 +13,10 @@ class MySpider(CrawlSpider):
     start_urls = ["http://opendata.socrata.com"]
     
     rules = (Rule (SgmlLinkExtractor(allow=
-                                     ("browse\?utf8=%E2%9C%93&amp;page=\d*",)),
+                                     ("browse\?utf8=%E2%9C%93&page=\d*",)),
              callback="parse_items", follow= True),)
     
-    def parse(self, response):
+    def parse_items(self, response):
         hxs = HtmlXPathSelector(response)
         names = hxs.select('//tr[@itemscope = "itemscope"]')
         items = []
